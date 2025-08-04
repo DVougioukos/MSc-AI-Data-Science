@@ -27,8 +27,6 @@ The course was structured into five main units:
 5. **Quality & Evolution**  
    Quality assessment, typical issues, and approaches to maintenance and scalability.
 
----
-
 ## 📂 Assignments
 
 ### 📝 Assignment 1: Knowledge Graph Schema Design
@@ -124,6 +122,6 @@ The course was structured into five main units:
   - Implementation notebooks for both tasks with clear usage instructions  
   - Report detailing detection methods, evaluation strategy, and findings on schema ambiguity and class accuracy
 
-📌 Wrapping Up
+## 📌 Wrapping Up
 
 Through these assignments, I gained hands-on experience with both symbolic and neural approaches to knowledge representation. I learned to design, populate, and assess knowledge graphs while integrating LLMs effectively across these processes. The course sharpened my ability to work with structured and unstructured data and evaluate AI systems that blend symbolic and statistical methods.
