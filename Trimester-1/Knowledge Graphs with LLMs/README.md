@@ -1,8 +1,10 @@
 # Knowledge Graphs with LLMs
 
-## 📘 Course Overview
+This folder contains my coursework and deliverables for the "Knowledge Graphs with LLMs" module, part of the MSc in Artificial Intelligence & Data Science (Trimester 1). The course explored how Large Language Models (LLMs) and Knowledge Graphs (KGs) can be integrated to improve the construction, interpretation, and application of structured knowledge. Below you will find an overview of the course content followed by detailed summaries of each assignment.
 
-This course focused on the intersection of **Knowledge Graphs (KGs)** and **Large Language Models (LLMs)**, exploring how these technologies can complement one another to enhance data understanding, reasoning, and application development.
+## 📖 Course Overview
+
+The course focused on the intersection of **Knowledge Graphs (KGs)** and **Large Language Models (LLMs)**, exploring how these technologies can complement one another to enhance data understanding, reasoning, and application development.
 
 The course introduced students to the full lifecycle of knowledge graphs — from schema design and data population to quality assurance and evolution — while emphasizing how LLMs can support or accelerate each phase. At the same time, it examined how structured knowledge representations (KGs) can enhance the accuracy, reliability, and explainability of LLM-based systems.
 
@@ -121,3 +123,7 @@ The course was structured into five main units:
 
   - Implementation notebooks for both tasks with clear usage instructions  
   - Report detailing detection methods, evaluation strategy, and findings on schema ambiguity and class accuracy
+
+📌 Wrapping Up
+
+Through these assignments, I gained hands-on experience with both symbolic and neural approaches to knowledge representation. I learned to design, populate, and assess knowledge graphs while integrating LLMs effectively across these processes. The course sharpened my ability to work with structured and unstructured data and evaluate AI systems that blend symbolic and statistical methods.
