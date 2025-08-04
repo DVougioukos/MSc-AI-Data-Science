@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://neo4j.com/voc/movies#"
+     xml:base="http://neo4j.com/voc/movies"
+     xmlns:mov="hhttp://neo4j.com/voc/movies#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://neo4j.com/voc/movies">
+        <rdfs:comment>A basic OWL ontology for Neo4j&apos;s movie database</rdfs:comment>
+        <rdfs:comment>Simple ontology providing basic vocabulary and domain+range axioms 
+	for the movie database.</rdfs:comment>
+        <rdfs:label>Neo4j&apos;s Movie Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://neo4j.com/voc/movies#ACTED_IN -->
+
+    <owl:ObjectProperty rdf:about="http://neo4j.com/voc/movies#ACTED_IN">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Person"/>
+        <rdfs:range rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#DIRECTED -->
+
+    <owl:ObjectProperty rdf:about="http://neo4j.com/voc/movies#DIRECTED">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Person"/>
+        <rdfs:range rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <rdfs:comment xml:lang="en">Director directed film</rdfs:comment>
+        <rdfs:label xml:lang="en">DIRECTED</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#IS_TYPE_OF -->
+
+    <owl:ObjectProperty rdf:about="http://neo4j.com/voc/movies#IS_TYPE_OF">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <rdfs:range rdf:resource="http://neo4j.com/voc/movies#MovieType"/>
+        <rdfs:comment>A movie has type</rdfs:comment>
+        <rdfs:label>IS_TYPE_OF</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#PRODUCED -->
+
+    <owl:ObjectProperty rdf:about="http://neo4j.com/voc/movies#PRODUCED">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Person"/>
+        <rdfs:range rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <rdfs:comment xml:lang="en">Producer produced film</rdfs:comment>
+        <rdfs:label xml:lang="en">PRODUCED</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#PRODUCED_IN -->
+
+    <owl:ObjectProperty rdf:about="http://neo4j.com/voc/movies#PRODUCED_IN">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <rdfs:range rdf:resource="http://neo4j.com/voc/movies#Country"/>
+        <rdfs:comment>Movie was produced in a country</rdfs:comment>
+        <rdfs:label>PRODUCED_IN</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#REVIEWED -->
+
+    <owl:ObjectProperty rdf:about="http://neo4j.com/voc/movies#REVIEWED">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Person"/>
+        <rdfs:range rdf:resource="http://neo4j.com/voc/movies#MovieRating"/>
+        <rdfs:label>REVIEWED</rdfs:label>
+        <rdfs:label>Reviewer reviewed a movie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#REVIEWED_BY -->
+
+    <owl:ObjectProperty rdf:about="http://neo4j.com/voc/movies#REVIEWED_BY">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#MovieRating"/>
+        <rdfs:range rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <rdfs:comment>A movie is reviewed</rdfs:comment>
+        <rdfs:label>REVIEWED_BY</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#WROTE -->
+
+    <owl:ObjectProperty rdf:about="http://neo4j.com/voc/movies#WROTE">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Person"/>
+        <rdfs:range rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <rdfs:comment xml:lang="en">Screenwriter wrote screenplay of</rdfs:comment>
+        <rdfs:label xml:lang="en">WROTE</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://neo4j.com/voc/movies#born -->
+
+    <owl:DatatypeProperty rdf:about="http://neo4j.com/voc/movies#born">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">A person&apos;s date of birth</rdfs:comment>
+        <rdfs:label xml:lang="en">born</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#name -->
+
+    <owl:DatatypeProperty rdf:about="http://neo4j.com/voc/movies#name">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Country"/>
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#MovieType"/>
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A person&apos;s name</rdfs:comment>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://neo4j.com/voc/movies#rating">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#MovieRating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>The rating of a reviewer</rdfs:comment>
+        <rdfs:label>rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#released -->
+
+    <owl:DatatypeProperty rdf:about="http://neo4j.com/voc/movies#released">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">A film&apos;s release date</rdfs:comment>
+        <rdfs:label xml:lang="en">released</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#review -->
+
+    <owl:DatatypeProperty rdf:about="http://neo4j.com/voc/movies#review">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#MovieRating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The review text of a reviewer</rdfs:comment>
+        <rdfs:label>review</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#tagline -->
+
+    <owl:DatatypeProperty rdf:about="http://neo4j.com/voc/movies#tagline">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Tagline for a film</rdfs:comment>
+        <rdfs:label xml:lang="en">tagline</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#title -->
+
+    <owl:DatatypeProperty rdf:about="http://neo4j.com/voc/movies#title">
+        <rdfs:domain rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The title of a film</rdfs:comment>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Action -->
+
+    <owl:Class rdf:about="http://neo4j.com/voc/movies#Action">
+        <rdfs:subClassOf rdf:resource="http://neo4j.com/voc/movies#MovieType"/>
+        <rdfs:comment>The genre &apos;Action&apos;</rdfs:comment>
+        <rdfs:label>Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Comedy -->
+
+    <owl:Class rdf:about="http://neo4j.com/voc/movies#Comedy">
+        <rdfs:subClassOf rdf:resource="http://neo4j.com/voc/movies#MovieType"/>
+        <rdfs:comment>The genre &apos;Comedy&apos;</rdfs:comment>
+        <rdfs:label>Comedy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Country -->
+
+    <owl:Class rdf:about="http://neo4j.com/voc/movies#Country">
+        <rdfs:comment>A country</rdfs:comment>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Movie -->
+
+    <owl:Class rdf:about="http://neo4j.com/voc/movies#Movie">
+        <rdfs:comment xml:lang="en">A film</rdfs:comment>
+        <rdfs:label xml:lang="en">Movie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#MovieRating -->
+
+    <owl:Class rdf:about="http://neo4j.com/voc/movies#MovieRating">
+        <rdfs:comment>Movie reviews</rdfs:comment>
+        <rdfs:label>MovieRating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#MovieType -->
+
+    <owl:Class rdf:about="http://neo4j.com/voc/movies#MovieType">
+        <rdfs:comment>A movie type</rdfs:comment>
+        <rdfs:label>MovieType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Person -->
+
+    <owl:Class rdf:about="http://neo4j.com/voc/movies#Person">
+        <rdfs:comment xml:lang="en">Individual involved in the film industry</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Reviewer -->
+
+    <owl:Class rdf:about="http://neo4j.com/voc/movies#Reviewer">
+        <rdfs:subClassOf rdf:resource="http://neo4j.com/voc/movies#Person"/>
+        <rdfs:comment>Person who reviews movies</rdfs:comment>
+        <rdfs:label>Reviewer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://neo4j.com/voc/movies#A_Few_Good_Men -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#A_Few_Good_Men">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <IS_TYPE_OF rdf:resource="http://neo4j.com/voc/movies#Dark_Comedy"/>
+        <PRODUCED_IN rdf:resource="http://neo4j.com/voc/movies#United_Kingdom"/>
+        <PRODUCED_IN rdf:resource="http://neo4j.com/voc/movies#United_States"/>
+        <released rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</released>
+        <tagline>In the heart of the nation&apos;s capital, in a courthouse of the U.S. government, one man will stop at nothing to keep his honor, and one will stop at nothing to find the truth.</tagline>
+        <title>A Few Good Men</title>
+        <rdfs:comment>The movie &apos;A Few Good Men&apos;</rdfs:comment>
+        <rdfs:label>A Few Good Men</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Dark_Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Dark_Comedy">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Comedy"/>
+        <name>Dark Comedy</name>
+        <rdfs:comment>The subgenre &apos;Dark Comedy&apos;</rdfs:comment>
+        <rdfs:label>Dark Comedy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Germany">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Country"/>
+        <name>Germany</name>
+        <rdfs:comment>The country &apos;Germany&apos;</rdfs:comment>
+        <rdfs:label>Germany</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Jerry_Maguire -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Jerry_Maguire">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <IS_TYPE_OF rdf:resource="http://neo4j.com/voc/movies#Romantic_Comedy"/>
+        <PRODUCED_IN rdf:resource="http://neo4j.com/voc/movies#United_States"/>
+        <released rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</released>
+        <tagline>The rest of his life begins now.</tagline>
+        <title>Jerry Maguire</title>
+        <rdfs:comment>The movie &apos;Jerry Maguire&apos;</rdfs:comment>
+        <rdfs:label>Jerry Maguire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Review_1 -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Review_1">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#MovieRating"/>
+        <REVIEWED_BY rdf:resource="http://neo4j.com/voc/movies#A_Few_Good_Men"/>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</rating>
+        <review>Interesting movie!</review>
+        <rdfs:comment>The first review</rdfs:comment>
+        <rdfs:label>Review 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Review_2 -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Review_2">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#MovieRating"/>
+        <REVIEWED_BY rdf:resource="http://neo4j.com/voc/movies#The_Matrix"/>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</rating>
+        <review>Amazing!</review>
+        <rdfs:comment>The second review</rdfs:comment>
+        <rdfs:label>Review 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Review_3 -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Review_3">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#MovieRating"/>
+        <REVIEWED_BY rdf:resource="http://neo4j.com/voc/movies#Top_Gun"/>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</rating>
+        <review>Excellent!</review>
+        <rdfs:comment>The third review</rdfs:comment>
+        <rdfs:label>Review 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Reviewer_1 -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Reviewer_1">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Reviewer"/>
+        <REVIEWED rdf:resource="http://neo4j.com/voc/movies#Review_1"/>
+        <REVIEWED rdf:resource="http://neo4j.com/voc/movies#Review_2"/>
+        <name>Reviewer 1</name>
+        <rdfs:comment>The first reviewer</rdfs:comment>
+        <rdfs:label>Reviewer 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Reviewer_2 -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Reviewer_2">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Reviewer"/>
+        <REVIEWED rdf:resource="http://neo4j.com/voc/movies#Review_3"/>
+        <name>Reviewer 2</name>
+        <rdfs:comment>The second reviewer</rdfs:comment>
+        <rdfs:label>Reviewer 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Romantic_Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Romantic_Comedy">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Comedy"/>
+        <name>Romantic Comedy</name>
+        <rdfs:comment>The subgenre &apos;Romantic Comedy&apos;</rdfs:comment>
+        <rdfs:label>Romantic Comedy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Spy_Action -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Spy_Action">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Action"/>
+        <name>Spy Action</name>
+        <rdfs:comment>The subgenre &apos;Spy Action&apos;</rdfs:comment>
+        <rdfs:label>Spy Action</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#The_Matrix -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#The_Matrix">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <IS_TYPE_OF rdf:resource="http://neo4j.com/voc/movies#Spy_Action"/>
+        <PRODUCED_IN rdf:resource="http://neo4j.com/voc/movies#Germany"/>
+        <released rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</released>
+        <tagline>Welcome to the Real World</tagline>
+        <title>The Matrix</title>
+        <rdfs:comment>The movie &apos;The Matrix&apos;</rdfs:comment>
+        <rdfs:label>The Matrix</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#Top_Gun -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#Top_Gun">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Movie"/>
+        <IS_TYPE_OF rdf:resource="http://neo4j.com/voc/movies#Spy_Action"/>
+        <PRODUCED_IN rdf:resource="http://neo4j.com/voc/movies#Germany"/>
+        <PRODUCED_IN rdf:resource="http://neo4j.com/voc/movies#United_States"/>
+        <released rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1986</released>
+        <tagline>I feel the need, the need for speed.</tagline>
+        <title>Top Gun</title>
+        <rdfs:comment>The movie &apos;Top Gun&apos;</rdfs:comment>
+        <rdfs:label>Top Gun</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#United_Kingdom -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#United_Kingdom">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Country"/>
+        <name>United Kingdom</name>
+        <rdfs:comment>The country &apos;United Kingdom&apos;</rdfs:comment>
+        <rdfs:label>United Kingdom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://neo4j.com/voc/movies#United_States -->
+
+    <owl:NamedIndividual rdf:about="http://neo4j.com/voc/movies#United_States">
+        <rdf:type rdf:resource="http://neo4j.com/voc/movies#Country"/>
+        <name>United States</name>
+        <rdfs:comment>The country &apos;United States&apos;</rdfs:comment>
+        <rdfs:label>United States</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
