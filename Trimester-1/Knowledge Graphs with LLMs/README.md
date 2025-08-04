@@ -29,7 +29,7 @@ The course was structured into five main units:
 
 ## 📂 Assignments
 
-### 📝 Assignment 1: Knowledge Graph Schema Design
+### 📝 Assignment 1 - Knowledge Graph Schema Design
 - **Summary**
 
   Expanded a movie knowledge graph to support complex competency questions related to genres, production countries, and user reviews. The task involved extending both a Neo4j property graph and an OWL/RDF     ontology, ensuring the schema could support expressive querying using Cypher and SPARQL.
@@ -50,7 +50,7 @@ The course was structured into five main units:
   - Sample Cypher and SPARQL queries
   - Report with detailed information about modeling options
 
-### 📝 Assignment 2: Knowledge Graph Population
+### 📝 Assignment 2 - Knowledge Graph Population
 
 - **Summary:**  
 
@@ -73,7 +73,7 @@ The course was structured into five main units:
   - Evaluation dataset for edge-case scenarios  
   - Report explaining design decisions, prompting strategy, and evaluation findings
 
-### 📝 Assignment 3: Applying Knowledge Graphs
+### 📝 Assignment 3 - Applying Knowledge Graphs
 
 - **Summary:**  
 
@@ -100,7 +100,7 @@ The course was structured into five main units:
   - Improved prompt versions and comparison analysis  
   - Report detailing methodology, results, and LLM behavior observations
 
-### 📝 Assignment 4: Knowledge Graph Quality
+### 📝 Assignment 4 - Knowledge Graph Quality
 
 - **Summary:**  
 
