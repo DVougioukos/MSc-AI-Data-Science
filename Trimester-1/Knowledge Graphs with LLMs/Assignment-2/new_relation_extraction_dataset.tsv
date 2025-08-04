@@ -1,0 +1,81 @@
+text	subject	object	relation_in_sentence
+I hope John has lived in New York.	John	New York	unknown
+I wish Laura could live in New York.	Laura	New York	unknown
+It would be nice if Zoe lived in Los Angeles.	Zoe	Los Angeles	unknown
+I hope Maria could reside in Chicago.	Maria	Chicago	unknown
+I wish Alice could live in Boston.	Alice	Boston	unknown
+It would be wonderful if Bob moved to Seattle.	Bob	Seattle	unknown
+I hope Lily will live in Miami one day.	Lily	Miami	unknown
+I wish Sarah would move to Denver.	Sarah	Denver	unknown
+It would be great if Mike lived in Austin.	Mike	Austin	unknown
+I hope Emily gets to live in San Francisco.	Emily	San Francisco	unknown
+I think Zoe may have lived in Los Angeles.	Zoe	Los Angeles	unknown
+It's possible that Maria lives in Chicago.	Maria	Chicago	unknown
+I heard that Alice might reside in Boston.	Alice	Boston	unknown
+It seems like Bob lived in Seattle before.	Bob	Seattle	unknown
+I wonder if Lily has ever lived in Miami.	Lily	Miami	unknown
+Perhaps Sarah used to live in Denver.	Sarah	Denver	unknown
+I think Mike may have lived in Austin.	Mike	Austin	unknown
+It's possible that Emily resides in San Francisco.	Emily	San Francisco	unknown
+I think I heard that Panos moved to Greece	Panos	Greece	unknown
+I think Maria probably lived in Germany for some time	Maria	Germany	unknown
+I hope Bob works at Facebook.	Bob	Facebook	unknown
+It would be great if Lily could get a job at IBM.	Lily	IBM	unknown
+I wish John would work at Google.	John	Google	unknown
+I hope Maria gets a job at Amazon.	Maria	Amazon	unknown
+It would be nice if Alice worked at Microsoft.	Alice	Microsoft	unknown
+I wish Bob could work at Facebook.	Bob	Facebook	unknown
+It would be wonderful if Sarah found a job at Tesla.	Sarah	Tesla	unknown
+I hope Emily gets a position at Netflix.	Emily	Netflix	unknown
+I wish Mike had become a Twitter employee.	Mike	Twitter	unknown
+It would be great if Hannah found work at Intel.	Hannah	Intel	unknown
+It seems that Sarah is working for Apple.	Sarah	Apple	unknown
+I think it’s possible that John works at Google.	John	Google	unknown
+It seems like Maria is an employee of Amazon.	Maria	Amazon	unknown
+Maybe Alice has been employed by Microsoft.	Alice	Microsoft	unknown
+I wonder if Lily has a job at Netflix.	Lily	Netflix	unknown
+It’s possible that Sarah is working at Twitter.	Sarah	Twitter	unknown
+Perhaps Emily is currently employed at Tesla.	Emily	Tesla	unknown
+I think Mike may work for IBM now.	Mike	IBM	unknown
+I heard that Hannah could be employed by Intel.	Hannah	Intel	unknown
+I really think that Maria found a position at Microsoft	Maria	Microsoft	unknown
+I hope John can go to Harvard.	John	Harvard	unknown
+It would be nice if Maria could attend Stanford.	Maria	Stanford	unknown
+I wish Alice would study at Yale.	Alice	Yale	unknown
+It would be great if Lily attended MIT.	Lily	MIT	unknown
+I hope Sarah will go to Oxford next year.	Sarah	Oxford	unknown
+It would be wonderful if Laura could attend UCLA.	Laura	UCLA	unknown
+I wish Zoe could go to NYU this fall.	Zoe	NYU	unknown
+It would be nice if Emily studied at Cambridge.	Emily	Cambridge	unknown
+I hope Hannah gets accepted to Princeton.	Hannah	Princeton	unknown
+I wish Kate would go to Boston University.	Kate	Boston University	unknown
+It’s possible that John went to Harvard.	John	Harvard	unknown
+I think Maria might have attended Stanford.	Maria	Stanford	unknown
+It's uncertain if Alice went to Yale.	Alice	Yale	unknown
+I heard that Lily could have graduated from MIT.	Lily	MIT	unknown
+It seems like Sarah may have studied at Oxford.	Sarah	Oxford	unknown
+Maybe Laura attended UCLA last year.	Laura	UCLA	unknown
+I wonder if Zoe went to NYU.	Zoe	NYU	unknown
+Perhaps Emily studied at Cambridge.	Emily	Cambridge	unknown
+It's possible that Hannah graduated from Princeton.	Hannah	Princeton	unknown
+I think Kate may have attended Boston University.	Kate	Boston University	unknown
+It would be great if Emily could marry James.	Emily	James	unknown
+It would be nice if Mike and Anna got married.	Mike	Anna	unknown
+I wish Jane would marry Mark.	Jane	Mark	unknown
+It would be wonderful if Lily could marry Tom.	Lily	Tom	unknown
+I hope Sarah will marry David someday.	Sarah	David	unknown
+It would be nice if Emily married John.	Emily	John	unknown
+I wish Alice would marry Bob.	Alice	Bob	unknown
+I hope Zoe and Frank will eventually get married.	Zoe	Frank	unknown
+It would be great if Laura was spouse of Jake.	Laura	Jake	unknown
+I wish Kate could marry Tom.	Kate	Tom	unknown
+It is possible that John is married to Jane.	John	Jane	unknown
+I think Maria might be married to Paul.	Maria	Paul	unknown
+It's uncertain if Alice was married to Bob.	Alice	Bob	unknown
+I heard that Lily could be engaged to Tom.	Lily	Tom	unknown
+It seems like Sarah may have been married to David.	Sarah	David	unknown
+Maybe Laura is still married to Matt.	Laura	Matt	unknown
+It might be that Zoe was married to Frank.	Zoe	Frank	unknown
+Perhaps Emily was previously married to Jake.	Emily	Jake	unknown
+There are rumors that Hannah and Mark were married before.	Hannah	Mark	unknown
+I wonder if Kate is married to Tom.	Kate	Tom	unknown
