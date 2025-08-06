@@ -34,10 +34,6 @@ The course was structured into five main units:
 
   Expanded a movie knowledge graph to support complex competency questions related to genres, production countries, and user reviews. The task involved extending both a Neo4j property graph and an OWL/RDF     ontology, ensuring the schema could support expressive querying using Cypher and SPARQL.
 
-- **Tools**
-
-  Neo4j (AuraDB), Protégé, Cypher, SPARQL, Large Language Models (LLMs)
-
 - **Focus Areas**
 
   - Schema design and modeling trade-offs
@@ -55,10 +51,6 @@ The course was structured into five main units:
 - **Summary:**  
 
   Built an LLM-powered relation extractor to populate a knowledge graph by identifying semantic relationships between people, organizations, cities, schools, and spouses from unstructured text. The system     was designed using **prompt-based classification** without any fine-tuning.
-
-- **Tools:**  
-
-  Python, OpenAI API, zero-shot and few-shot prompting, Large Language Models (LLMs)
 
 - **Focus Areas:**  
 
@@ -78,10 +70,6 @@ The course was structured into five main units:
 - **Summary:**  
 
   Evaluated and improved a QA system that translates natural language questions into **Cypher queries** for querying a Neo4j movie knowledge graph. The goal was to assess the performance of LLM-generated      queries and enhance them through prompt refinement.
-
-- **Tools:**  
-
-  Python, Neo4j, OpenAI API, Cypher, Large Language Models (LLMs)
 
 - **Focus Areas:**  
 
@@ -105,10 +93,6 @@ The course was structured into five main units:
 - **Summary:**  
 
   Assessed the quality of the **DBPedia** knowledge graph through two tasks: detecting term ambiguity in the schema and evaluating the correctness of class assignments for external skill concepts. The        assignment focused on schema understandability and the challenges of modeling abstract concepts.
-
-- **Tools:**  
-
-  Python, SPARQL, OpenAI API, Large Language Models (LLMs)
 
 - **Focus Areas:**  
 
